@@ -1,0 +1,105 @@
+[
+    {
+    "id":"1",
+    "image":{
+      "path":"/marketplace/market1.jpg",
+      "alt":"image alt"
+    },
+    "description":"Dessin à 5 mains",
+    "rating": {
+                "score": "4.5",
+                "comments": "11",
+                "link":""
+              },
+    "price":"50",
+    "unit":"par personne",
+    "localisation":"onsite",
+    "city":"Montpellier"
+   },
+   {
+    "id":"2",
+    "image":{
+      "path":"/marketplace/market2.jpg",
+      "alt":"image alt"
+    },
+    "description":"Animation Casino",
+    "rating": {
+                "score": "4.5",
+                "comments": "11",
+                "link":""
+              },
+    "price":"50",
+    "unit":"par personne",
+    "localisation":"virtual",
+    "city":"Montpellier"
+   },
+   {
+    "id":"3",
+    "image":{
+      "path":"/marketplace/market3.jpg",
+      "alt":"image alt"
+    },
+    "description":"Roulette Russe",
+    "rating": {
+                "score": "4.5",
+                "comments": "11",
+                "link":""
+              },
+    "price":"25",
+    "unit":"par personne",
+    "localisation":"virtual",
+    "city":"Marseille"
+   },
+   {
+    "id":"4",
+    "image":{
+      "path":"/marketplace/market2.jpg",
+      "alt":"image alt"
+    },
+    "description":"Barbecue + bières",
+    "rating": {
+                "score": "5.0",
+                "comments": "4",
+                "link":""
+            },
+    "price":"1000",
+    "unit":"unité",
+    "localisation":"onsite",
+    "city":"Avignon"
+   },
+   {
+    "id":"5",
+    "image":{
+      "path":"/marketplace/market1.jpg",
+      "alt":"image alt"
+    },
+    "description":"Karting",
+    "rating": {
+                "score": "3.7",
+                "comments": "2",
+                "link":""
+            },
+    "price":"2600",
+    "unit":"unité",
+    "localisation":"onsite",
+    "city":"Mans"
+   },
+   {
+    "id":"6",
+    "image":{
+      "path":"/marketplace/market3.jpg",
+      "alt":"image alt"
+    },
+    "description":"EPS",
+    "rating": {
+                "score": "3.7",
+                "comments": "2",
+                "link":""
+            },
+    "price":"80",
+    "unit":"par personne",
+    "localisation":"onsite",
+    "city":"Paris"
+   }
+   
+ ]

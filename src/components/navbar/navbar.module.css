@@ -1,0 +1,218 @@
+.uniteam{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left:15px;
+}
+
+.uniteam .icon svg{
+    width: 44px;
+    height: auto;
+}
+.uniteam .logo svg{
+    width:140px ;
+    height: auto;
+    margin-left:15px;
+}
+
+.navbar{
+    /* position: fixed; */
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height:110px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    --sidebar-width:500px;
+}
+
+.itemcontainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+
+.navright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    width: 100%;
+    padding-right: 10%;
+}
+
+.navright .icon svg{
+    width: 16px;
+    height: auto;
+}
+
+.navright_s{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.connect_f, .connect_s{
+    font-weight: 500;
+    font-size: 19px;
+    color:var(--main-white);
+    background-color: var(--main-blue);
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width:140px;
+  }
+
+  .connect_s{
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    background-color: var(--main-white);
+    border: solid 1px var(--main-grey);
+  }
+  .connect_s path{
+    fill:var(--main-blue)
+  }
+
+  .connect_f:hover, .connect_s:hover, .user_button{
+    cursor: pointer;
+  }
+
+  .user_button_container{
+    position:relative;
+    top:0px;
+
+  }
+  .user_button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 35px;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 5px 10px 10px;
+    gap: 5px;
+    border-radius: 20px;
+    border: solid 1px var(--main-grey);
+    background-color: var(--main-white);
+  }
+  .user_image{
+    border-radius: 50%;
+  }
+
+  .user_name{
+    width:100%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 19px;
+  }
+
+  .user_menu{
+    position:absolute;
+    top:35px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--main-white);
+    width:150px;
+    border: solid 1px var(--main-grey);
+    border-radius: 20px 0px 20px 20px;
+    padding: 10px 5px 10px 10px;
+  }
+
+
+.burger button{
+    border: none;
+    background: none;
+}
+.burger button:hover{
+    cursor: pointer;
+}
+
+.burger svg{
+    width: 32px;
+    height: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.sidebar{
+    z-index: 999;
+    position:fixed;
+    top:0;
+    right:0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+    padding-left: 25px;
+}
+.sidebar .burger{
+    height:var(--navbar-height);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 1400px) {
+    .navbar div{
+        font-size: 15px;
+    }
+    .uniteam .icon svg{
+        width: 35px;
+        height: auto;
+    }
+    .uniteam .logo svg{
+        width:100px ;
+        height: auto;
+        margin-left:15px;
+    }
+
+    .user_button{
+        width: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        --sidebar-width: clamp(200px,50vw,500px)
+    }
+}
+
+
+.sidemenuEnterActive{
+    position:absolute;
+    transform: translateX(var(--sidebar-width));
+    opacity: 0;
+}
+.sidemenuEnter{
+    transform: translateX(0); 
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.sidemenuExitActive{
+    transform: translateX(var(--sidebar-width)); 
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sidemenuExit{
+    position:absolute;
+    transform: translateX(0);
+    opacity: 1;
+}

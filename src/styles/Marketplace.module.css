@@ -1,0 +1,19 @@
+.container{
+    margin-top: var(--navbar-height);
+    display: grid;
+    grid-template-columns: var(--filter-width) 1fr;
+    height: 100vh;
+    background-color: white;
+}
+
+.paths{
+    width: 100%;
+    margin: 20px 16px;
+}
+.searchbar_layout{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 69px;
+}

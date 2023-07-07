@@ -1,0 +1,106 @@
+[
+    {
+        "id":1,
+        "title": "Team building",
+        "submenus": [
+            {
+                "id":1,
+                "title": "Esprit d'équipe",
+                "href": "/marketplace"
+            },
+            {
+                "id":2,
+                "title": "Découverte",
+                "href": "/"
+            },
+            {
+                "id":3,
+                "title": "Art et Création",
+                "href": "/"
+            },
+            {
+                "id":4,
+                "title": "Apprendre en s'amusant",
+                "href": "/"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "title": "Cadeaux & Goodies",
+        "submenus": [
+            {
+                "id":1,
+                "title": "Bureau",
+                "href": "/"
+            },
+            {
+                "id":2,
+                "title": "Equipement de Squad",
+                "href": "/"
+            },
+            {
+                "id":3,
+                "title": "Extérieur",
+                "href": "/"
+            },
+            {
+                "id":4,
+                "title": "Décoration",
+                "href": "/"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "title": "Développement professionel",
+        "submenus": [
+            {
+                "id":1,
+                "title": "Soft Skills",
+                "href": "/"
+            },
+            {
+                "id":2,
+                "title": "Hard Skills",
+                "href": "/"
+            },
+            {
+                "id":3,
+                "title": "Business",
+                "href": "/"
+            },
+            {
+                "id":4,
+                "title": "Tech",
+                "href": "/"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "title": "Santé & Bien-être",
+        "submenus": [
+            {
+                "id":1,
+                "title": "Nutrition",
+                "href": "/"
+            },
+            {
+                "id":2,
+                "title": "Méditation & Yoga",
+                "href": "/"
+            },
+            {
+                "id":3,
+                "title": "Coaching",
+                "href": "/"
+            },
+            {
+                "id":4,
+                "title": "Innovant",
+                "href": "/"
+            }
+        ]
+    }
+]

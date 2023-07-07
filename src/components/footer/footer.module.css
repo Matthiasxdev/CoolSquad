@@ -1,0 +1,89 @@
+.footer{
+    width: 100%;
+    padding: 20rem 6rem 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+  }
+  
+  .footer .firstpart{
+    width: 100%;
+    display: grid;
+    gap:23px;
+    grid-template-columns: repeat(4,15.7%) 29.75%;
+  }
+  .footer h3{
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .footer li{
+    font-weight: 400;
+    font-size: 17px;
+    padding-top: 15px;
+    list-style: none;
+  }
+  
+  .footer .secondpart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .secondpart ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .secondpart li{
+    padding-right: 20px;
+  }
+  
+  .footer .email{
+    font-size: 15px;
+    border: solid 1px var(--secondary-blue);
+    border-radius: 36px;
+    background-color: var(--main-white);
+    height: 39px;
+    width: 100%;
+  }
+  
+  .footer .email::placeholder{
+    padding: 10px 12px;
+    font-weight: 400;
+    color:var(--secondary-blue);
+  }
+  
+  .footer .button{
+    font-weight: 500;
+    font-size: 19px;
+    color:var(--main-white);
+    background-color: var(--main-blue);
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width:129px;
+  }
+  
+  .footer .button:hover{
+    cursor: pointer;
+  }
+
+  @media (max-width:1350px){
+    .footer .firstpart{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .footer .secondpart{
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+    .footer .secondpart .infos ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }

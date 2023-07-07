@@ -1,0 +1,85 @@
+
+.text{
+    font-weight: 700;
+    font-size: 28px;
+    color:var(--main-white);
+    position: relative;
+    z-index: 1;
+    padding:22px 25px 22px 32px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: var(--width-card-activity); */
+}
+.image{
+    border-radius:40px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow svg{
+    width: 34px;
+    height: 34px;
+}
+
+.arrow svg path{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    fill:var(--main-white);
+}
+
+.container:hover .arrow svg path{
+    opacity: 1;
+    fill:var(--main-green);
+    transform: translateX(0);
+}
+.container:hover .text{
+    color:var(--main-green);
+}
+
+.container:hover .vignette:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 131px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 94.77%);
+    border-radius:40px;
+    position: absolute;
+    top: 0; left: 0;
+    opacity:1;
+    animation: vignette 0.3s ease-in-out
+}
+
+
+/* The animation code */
+@keyframes vignette {
+    from {
+        background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 94.77%);
+        opacity: 0;
+    }
+    to {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 94.77%);
+        opacity: 1;
+    }
+  }
+
+
+  
+@media (max-width:1024px){
+    .text{
+        font-weight: 500;
+        font-size: clamp(17px,3vw,28px);
+    }
+    .arrow svg{
+        width: 24px;
+        height: 24px;
+    }
+    .arrow svg path{
+        transform: translateX(-100%);
+    }
+}

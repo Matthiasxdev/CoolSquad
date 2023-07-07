@@ -1,0 +1,13 @@
+.formcontainer{
+    display: flex;
+    flex-direction: row;
+    gap:29px;
+    width: clamp(500px, 100%, 811px);
+}
+
+@media (max-width: 1024px) {
+    .formcontainer{
+        flex-direction: column;
+        width: clamp(300px, 80vw, 700px);
+    }
+  }

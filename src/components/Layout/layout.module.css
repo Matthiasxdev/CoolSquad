@@ -1,0 +1,44 @@
+.page_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-satoshi);
+    color:var(--main-black);
+    block-size: 100vh;
+    padding-top:var(--navbar-height);
+  }
+
+  .content_container{
+    height: 100%;
+    width: 100%;
+    padding-top: 52px;
+    padding-left: calc(var(--sidebar-width) + 100px);
+  }
+
+  .content_container h1{
+    display: flex;
+    align-items: center;
+    gap:22px;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 52px;
+  }
+  
+  .blue_button{
+    font-weight: 500;
+    font-size: 19px;
+    color:var(--main-white);
+    background-color: var(--main-blue);
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    padding: 8px 26px;
+  }
+
+  .blue_button:hover{
+    cursor:pointer;
+  }
