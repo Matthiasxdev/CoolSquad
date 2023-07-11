@@ -19,10 +19,13 @@ export interface CardExtend extends Card{
   unit:string;
   localisation: "onsite" | "virtual";
   city:string;
+  time:string;
+  details:string;
 }
 
 
 export interface CardPresentation extends Card {
+  price: number;
   rating:{
   score: number;
   comments: number;
