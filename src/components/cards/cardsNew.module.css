@@ -1,5 +1,5 @@
 .container{
-    height:180px;
+    height:320px;
     width:230px;
     display: block;
     padding: 0;
@@ -27,14 +27,8 @@
     transform: scale(1.15) ;
 }
 
-.text{
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-
-.text1{
-    display: grid;
-    grid-template-columns: 70% 30%;
+.text_container{
+    display: flex;
 }
 
 
@@ -53,7 +47,8 @@
     width:100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5px;
     text-align: right;
     font-weight: 700;
     font-size: 16px;
@@ -80,25 +75,47 @@
     overflow-x: none;
 }
 .time{
-    width:100%;
     height: 100%;
     display: flex;
-    text-align: left;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
     color: rgb(156, 154, 154);
+}
+
+.text_container_time_city{
+    display: flex;
+    gap: 19px;
+    width: 100%;
+
 }
 
 .city{
-    width:100%;
-    height: 100%;
     display: flex;
     justify-content: space-evenly;
-    text-align: right;
+    align-items: center;
+    gap: 5px;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
-    color: rgb(156, 154, 154);
+    color: rgb(156, 154, 154);  
 }
 
+.city_text{
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.local_icon svg path{
+    fill: gray;
+    stroke: gray;
+}
+.local_icon svg{
+    height: 15px;
+    width: 15px;
+}
+.local_icon svg circle{
+    fill: gray;
+}

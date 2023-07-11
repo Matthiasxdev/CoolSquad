@@ -8,6 +8,11 @@ import { CardExtend } from "@/shared/types";
 import CardsNewGrid from '@/components/cards/gridcardsNew';
 
 export default function TestPage() {
+  const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    console.log("formSeminaire submited")
+  }
+
   return (
     <><Head>
       <title>CoolSquad | Séminaire</title>
@@ -39,7 +44,7 @@ export default function TestPage() {
             <p>Effectuez une demande via notre formulaire, nous vérifierons ensuite la faisabilité du projet. Suite à quoi nous vous contacterons pour fixer un rdv.</p>
           </div>
         </div>
-        <div className={style.formContainer}>
+        <form onSubmit={handleSubmit} className={style.formContainer}>
           <div className={style.row}>
             <div className={style.inputContainer}>
               <InputForms title="Prénom*" placeholder=''/>
@@ -74,8 +79,8 @@ export default function TestPage() {
           <div className={style.inputContainer}>
             <InputForms title="Informations complémentaires" placeholder='' isSpecial textareaRows={4}/>
           </div>
-          <div><button  className={style.button}>Faire une demande</button></div>
-      </div>
+          <button type="submit" className={style.button}>Faire une demande</button>
+      </form>
     </div>
      
     <div className={style.title2}>
@@ -109,7 +114,7 @@ const cardsIdeas:CardExtend[] = [
     unit: '/ personne',
     time:'2h',
     localisation: "onsite",
-    city: 'Montpellier',
+    city: 'Montpellier la ville des gros fous furieux de la night',
   },
   {
     id:'2',
@@ -173,7 +178,7 @@ const cardsIdeas:CardExtend[] = [
   },
 
   {
-    id:'4',
+    id:'5',
     image:{
       path:'/images/casino.jpg',
       alt:'Activités Icebreaker'

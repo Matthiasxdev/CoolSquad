@@ -1,6 +1,7 @@
 import { CardExtend } from "@/shared/types";
 import Image from "next/image";
 import styles from "./cardsNew.module.css"
+import LocalisationIcon from "../svg/localisation";
 
 const euroSymbol: string = '€';
 const space: string = ' ';
@@ -20,7 +21,7 @@ const space: string = ' ';
           </div>
         </a>
         <div className={styles.description}>{description}</div>
-        <div className={styles.text}>
+        <div className={styles.text_container}>
         <div className={styles.price}>{price + euroSymbol + space +  unit}</div>
           <a className={styles.rating} href={rating.link}>
             <div className={styles.score}>{rating.score}</div>
@@ -28,9 +29,12 @@ const space: string = ' ';
           </a>
           
         </div>
-        <div className={styles.text1}>
+        <div className={styles.text_container_time_city}>
           <div className={styles.time}>{time} </div>
-          <div className={styles.city}>{city} </div>
+          <div className={styles.city}>
+            <LocalisationIcon className={styles.local_icon} />
+            <div className={styles.city_text}>{city}</div>
+          </div>
         </div>
       </div>
     );
