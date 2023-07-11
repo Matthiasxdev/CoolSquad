@@ -19,7 +19,9 @@ interface IProps {
             unit={card.unit}
             localisation={card.localisation}
             city={card.city}
-            key={card.id} link={""}         
+            key={card.id} link={""}  
+            time={card.time}
+            details={card.details}       
             /> 
           </div>
           );
