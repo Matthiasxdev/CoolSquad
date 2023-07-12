@@ -9,7 +9,7 @@ import CardsNewGrid from '@/components/cards/gridcardsNew';
 import { ST } from 'next/dist/shared/lib/utils';
 import StarUniteamIcon from '@/components/svg/staruniteam';
 
-export default function TestPage() {
+export default function SeminairePage() {
   const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     console.log("formSeminaire submited")
@@ -75,7 +75,7 @@ export default function TestPage() {
           </div>
           <div className={style.row}>
             <div className={style.inputContainer}>
-              <InputForms title="Date souhaitée*" placeholder='jj/mm/aaaa'/>
+              <InputForms title="Date souhaitée*" type='date' placeholder='jj/mm/aaaa'/>
             </div>
             <div className={style.inputContainer}>
               <InputForms title="Ville*" placeholder='' />
