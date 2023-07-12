@@ -6,6 +6,8 @@ import Head from "next/head";
 import UniteamArrow from '@/components/svg/arrowuniteam';
 import { CardExtend } from "@/shared/types";
 import CardsNewGrid from '@/components/cards/gridcardsNew';
+import { ST } from 'next/dist/shared/lib/utils';
+import StarUniteamIcon from '@/components/svg/staruniteam';
 
 export default function TestPage() {
   const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
@@ -42,7 +44,10 @@ export default function TestPage() {
             <p>Nous mettons à votre disposition notre expertise et notre savoir-faire pour vous garantir un séminaire professionnel de qualité, qui correspond à vos objectifs et à votre image.</p>
             <h2>Comment ça marche ?</h2>
             <p>Effectuez une demande via notre formulaire, nous vérifierons ensuite la faisabilité du projet. Suite à quoi nous vous contacterons pour fixer un rdv.</p>
+            <h2>Une questions ?</h2>
+            <button className={style.buttonImage}>Contactez-nous</button>
           </div>
+          <StarUniteamIcon className={style.star} />
         </div>
         <form onSubmit={handleSubmit} className={style.formContainer}>
           <div className={style.row}>
@@ -79,7 +84,7 @@ export default function TestPage() {
           <div className={style.inputContainer}>
             <InputForms title="Informations complémentaires" placeholder='' isSpecial textareaRows={4}/>
           </div>
-          <button type="submit" className={style.button}>Faire une demande</button>
+          <button type="submit" className={style.buttonForm}>Faire une demande</button>
       </form>
     </div>
      

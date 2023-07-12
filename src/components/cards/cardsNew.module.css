@@ -81,6 +81,8 @@
     font-size: 16px;
     text-decoration: none;
     color: rgb(156, 154, 154);
+    gap: 5px;
+    align-items: center;
 }
 
 .text_container_time_city{
@@ -109,13 +111,13 @@
 }
 
 .local_icon svg path{
-    fill: gray;
-    stroke: gray;
+    fill:  rgb(156, 154, 154);
+    stroke:  rgb(156, 154, 154);
 }
 .local_icon svg{
     height: 15px;
     width: 15px;
 }
 .local_icon svg circle{
-    fill: gray;
+    fill:  rgb(156, 154, 154);
 }

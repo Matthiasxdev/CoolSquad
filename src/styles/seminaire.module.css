@@ -87,35 +87,61 @@
     border-radius: 45px;
     object-fit: cover;
 }
+.imageText {
+  position: absolute;
+  top: 151px;
+  left: 42px;
+  text-align: left;
+  color: #ffffff;
+  width:400px ;
+}
+
+.imageText h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.imageText p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buttonImage{
+  font-weight: 500;
+  font-size: 17px;
+  color:var(--main-white);
+  background-color: transparent;
+  border : 1px solid var(--main-white);
+  border-radius: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 255px;
+  position: relative;
+}
+
+.buttonImage:hover{
+  cursor: pointer;
+}
 
 .arrow svg{
   position: absolute;
-  top: 28px; right: 31px;
-  width: 31px;
-  height: 31px;
+  top: 632px; right: 432px;
+  width: 51px;
+  height: 51px;
   fill:var(--main-white);
 }
 
-.imageText {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: #ffffff;
-    width:400px ;
-  }
-  
-.imageText h2 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 42px;
-    margin-bottom: 10px;
-}
-  
-.imageText p {
-    font-size: 18px;
-    font-weight: 400;
+.star svg{
+  position: absolute;
+  top: 33px; right: 42px;
+  width: 81px;
+  height: 81px;
+  fill:var(--main-white);
 }
 
 .formContainer {
@@ -132,7 +158,7 @@
 
 }
 
-.button{
+.buttonForm{
     font-weight: 500;
     font-size: 17px;
     color:var(--main-white);
@@ -149,7 +175,7 @@
     position: relative;
 }
 
-.button:hover{
+.buttonForm:hover{
     cursor: pointer;
 }
 

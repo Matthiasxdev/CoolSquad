@@ -2,6 +2,8 @@ import { CardExtend } from "@/shared/types";
 import Image from "next/image";
 import styles from "./cardsNew.module.css"
 import LocalisationIcon from "../svg/localisation";
+import ScheduleIcon from "../svg/schedule";
+
 
 const euroSymbol: string = '€';
 const space: string = ' ';
@@ -30,7 +32,10 @@ const space: string = ' ';
           
         </div>
         <div className={styles.text_container_time_city}>
-          <div className={styles.time}>{time} </div>
+          <div className={styles.time}>
+            <ScheduleIcon className={styles.local_icon} />
+            <div className={styles.time}>{time} </div>
+          </div>
           <div className={styles.city}>
             <LocalisationIcon className={styles.local_icon} />
             <div className={styles.city_text}>{city}</div>
