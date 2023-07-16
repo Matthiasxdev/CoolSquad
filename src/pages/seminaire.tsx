@@ -52,15 +52,15 @@ export default function SeminairePage() {
         <form onSubmit={handleSubmit} className={style.formContainer}>
           <div className={style.row}>
             <div className={style.inputContainer}>
-              <InputForms title="Prénom*" placeholder=''/>
+              <InputForms title="Prénom*"/>
             </div>
             <div className={style.inputContainer}>
-              <InputForms title="Nom*" placeholder='' />
+              <InputForms title="Nom*"/>
             </div>
           </div>
           <div className={style.row}>
             <div className={style.inputContainer}>
-              <InputForms title="Entreprise*" placeholder=''/>
+              <InputForms title="Entreprise*"/>
             </div>
           </div>
           <div className={style.row}>
@@ -78,11 +78,11 @@ export default function SeminairePage() {
               <InputForms title="Date souhaitée*" type='date' placeholder='jj/mm/aaaa'/>
             </div>
             <div className={style.inputContainer}>
-              <InputForms title="Ville*" placeholder='' />
+              <InputForms title="Ville*"/>
             </div>
           </div>
           <div className={style.inputContainer}>
-            <InputForms title="Informations complémentaires" placeholder='' isSpecial textareaRows={4}/>
+            <InputForms title="Informations complémentaires" isSpecial textareaRows={4}/>
           </div>
           <button type="submit" className={style.buttonForm}>Faire une demande</button>
       </form>

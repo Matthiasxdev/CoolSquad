@@ -1,12 +1,13 @@
 .title {
     display: flex;
     margin-top: 200px;
-    margin-left: -850px;
+    margin-left: 323px;
     color: black;
-    position: relative;
-    justify-content: center;
+    justify-content: left;
     font-size: 30px;
+    position: relative;
   }
+
 
   .container{
     width: 1274px;
@@ -15,4 +16,250 @@
     background: var(--main-white);
     /* ombre bloc */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
+  
+  .containerLeft{
+    width: 873px;
+    height: 1683px;
+    border-radius: 39px 0px 0px 39px;
+    background: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+    gap: 20px;
+  }
+
+  .containerImage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-content: center;
+    margin-bottom: 35px;
+  }
+
+  .image{
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .titleActivity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .inputBooking{
+    margin-bottom: 30px;
+  }
+
+  .inputBookingtop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+  }
+  
+  .inputBox{
+    border-radius: 52px;
+    font-size: 16px;
+    border: solid 1px var(--main-black);
+    background-color: var(--main-white);
+    height: 52px;
+    width: 100%;
+    padding-left: 15px; 
+    padding-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .containerLocalisation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .containerLocalisationInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+  }
+
+  .containerLocalisationInput .thickbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .localIcon{
+    width: 16px;
+    height: 16px;
+    
+  }
+  
+  .containerLocalisationMap{
+    width: 100%;
+    margin-left: 21px;
+    display: flex;
+    align-content: center;
+    height: 200px;
+    border-radius: 20px;
+    background-color: aquamarine;
+  }
+
+  .contactTitleButton{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    gap: 20px;
+  }
+  
+  .contactButton{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    width: 100%;
+  } 
+
+  .link{
+    color: var(--main-blue);
+    text-decoration: underline;
+  }
+
+  .contactForm{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+    grid-gap: 20px; /* Espacement entre les éléments */
+    margin-bottom: 30px;
+  }
+  
+  .buyingMethod{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .cardInfos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .disclaimerPrivacy{
+    color : grey;
+  }
+
+  .containerRight{
+    width: 401px;
+    height: 1683px;
+    border-radius: 0px 39px 39px 0px;
+    background: var(--bleu-6, #D9E1FF);
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+    gap: 20px;
+  }
+
+  .attendees_price{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+  }
+
+  .attendees{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+  }
+
+  .attendeesNumber{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    background: var(--main-white);
+    padding-right: 13px;
+    padding-left: 13px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .price{
+    display: flex;
+  }
+
+  .totalprice{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+    font-weight: bold;
+  }
+
+  .total{
+    width: 100%;
+  }
+
+  .button{
+    font-weight: 500;
+    font-size: 17px;
+    color:var(--main-white);
+    background-color: var(--main-blue);
+    border: none;
+    border-radius: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .infosProtect{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .localIcon{
+    width: 24px;
+    height: 24px;
+  }
+
+  .textProtect{
+    color: var(--main-blue);
+    font-size: 18px;
+  }
+
+
+
+
+
+
+
+
+ 

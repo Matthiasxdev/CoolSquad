@@ -3,13 +3,13 @@ import styles from './InputForms.module.css';
 
 type InputFormsProps = {
   title: string;
-  placeholder: string;
+  placeholder?: string;
   isSpecial?: boolean;
   textareaRows?: number;
   type?: string;
 };
 
-const InputForms: React.FC<InputFormsProps> = ({ title,placeholder, isSpecial, textareaRows, type='text'}) => {
+const InputForms: React.FC<InputFormsProps> = ({ title,placeholder='', isSpecial, textareaRows, type='text'}) => {
   const boxClassName = isSpecial ? `${styles.box} ${styles.specialbox}` : styles.box;
   const inputElement = isSpecial ? (
     <textarea className={boxClassName} rows={textareaRows} />
