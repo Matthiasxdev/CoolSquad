@@ -7,9 +7,14 @@ interface IProps {
   }
   
   export default function CardsGrid({myCards}:IProps){
+
+      // const toggleFavorite = async (id : string) => {
+      //   console.log(id)
+      // }
+
       const createCard = (card: CardExtend) => {
           return (
-          <div>
+          <div key={card.id} >
           <CardComponent 
             id={card.id}
             description={card.description}
@@ -19,7 +24,9 @@ interface IProps {
             unit={card.unit}
             localisation={card.localisation}
             city={card.city}
-            key={card.id} link={""}         
+            link={""} 
+            favorite={false}
+            // onClickFavorite={() => toggleFavorite(card.id)}        
             /> 
           </div>
           );

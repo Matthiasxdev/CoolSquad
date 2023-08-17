@@ -40,6 +40,7 @@ export const authOptions = {
     session({ session, user }: {session: Session, user: User}) {
       if (session.user){
         session.user.role = user.role
+        session.user.id = user.id
       }
     return session
   }

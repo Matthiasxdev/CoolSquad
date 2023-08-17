@@ -138,19 +138,17 @@ export default function FilterComponent({defaultCards,myCards,onFilter}:IPROPS){
     const createFilter = (filter:Filter,arrayID:string) => {
         // console.log('myKey',arrayID + filter.id.toString())
         return (
-            <>
-                <li>
-                    <CheckboxComponent 
-                    myTarget={arrayID}
-                    myID={filter.id}
-                    myValue={filter.value}
-                    myLabel={getLabelFilter(arrayID, filter.value)}
-                    onCheck={handleCheck}
-                    key={arrayID + filter.id.toString()}
-                    />
-                    
-                </li>
-            </>
+            <li key={arrayID + filter.id.toString()}>
+                <CheckboxComponent 
+                myTarget={arrayID}
+                myID={filter.id}
+                myValue={filter.value}
+                myLabel={getLabelFilter(arrayID, filter.value)}
+                onCheck={handleCheck}
+                key={'checkbox' + arrayID + filter.id.toString()}
+                />
+                
+            </li>
         )
     }
     const createFilters = (filters:Filter[],arrayID:string) => {

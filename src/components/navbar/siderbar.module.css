@@ -33,10 +33,15 @@
     transition: fill 0.2s
 }
 
-.resize svg {
+.resize_30 svg {
     height: 30px;
     width: 30px;
 }
+.resize_40 svg {
+    height: 45px;
+    width: 45px;
+}
+
 
 .sidebar_container button{
     background-color: var(--main-white);

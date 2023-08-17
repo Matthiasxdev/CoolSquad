@@ -22,7 +22,7 @@ export const Sidebar = () => {
         <div className={styles.sidebar_container} >
             <button>
                 <Link href="/">
-                    <HomeIcon className={styles.icon_home}/>
+                    <HomeIcon className={`${styles.icon_home} ${styles.resize_40}`}/>
                 </Link>
             </button>
             <button><AgendaIcon className={styles.icon}/></button>
@@ -33,7 +33,7 @@ export const Sidebar = () => {
             </button>
             <button><GraphsIcon className={styles.icon} /></button>
             <button><SendIcon className={styles.icon} /></button>
-            <button><PersonIcon className={`${styles.icon} ${styles.resize}`}/></button>
+            <button><PersonIcon className={`${styles.icon} ${styles.resize_30}`}/></button>
         </div>
         :
         <div>

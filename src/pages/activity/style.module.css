@@ -1,0 +1,150 @@
+
+
+.container{
+    margin-top: var(--navbar-height);
+    padding-left:clamp(2em, 5vw, 108px);
+    padding-top:150px;
+    display: flex;
+    gap: clamp(2em, 2vw, 140px);
+    font-size: clamp(0.7em, 5vw, 19px);
+    font-weight: 500;
+    --tab-size: clamp(1em, 7vw, 35px);
+}
+
+
+.container h1 {
+    font-weight:600;
+    font-size: clamp(2em,5vw,52px);
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    width: 50vw;
+}
+
+.titre{
+    margin-bottom: 76px;
+}
+.prix {
+    margin-bottom: 52px;
+}
+
+.visual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.image{
+    /* width:clamp(10em, 40vw, 612px);
+    height: auto; */
+    height:clamp(200px, 40vw, 416px);
+    width: auto;
+    object-fit:cover;
+    border-radius: 39px;
+}
+
+.infographs{
+    display: flex;
+    gap:17px;
+}
+
+.infographs div{
+    display: flex;
+    align-items: center;
+    gap: 13px; 
+}
+
+.infographs svg{
+    width: 24px;
+    height: 24px;
+}
+
+.objectifs, .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.objectifs ul, .infos ul{
+    padding-left: var(--tab-size);
+    line-height: 28.5px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.objectifs ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10%
+
+}
+.objectifs li {
+    width:100%;
+    flex: 0 45%  ; /* or - flex: 0 50% */
+
+  }
+
+/* ====  FORM ===== */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.form button{
+    width:clamp(200px, 40vw, 380px);
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    padding: 8px 25px 8px 25px;
+    border: none;
+    border-radius: 30px;
+}
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    gap: 6.58px;
+}
+
+.input_container input{
+    width: 200px ;
+    color: #D2D2D2;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #E2E1E5;
+    
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    
+}
+.date_time {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.date_time input{
+    width: 150px ;
+
+}
+
+/* =====MEDIA==== */
+
+@media(max-width:900px){
+    
+    .infographs{
+        flex-direction: column;
+    }
+
+    
+    .date_time {
+        flex-direction: column;
+    }
+}
+
