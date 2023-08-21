@@ -31,11 +31,16 @@ export default function MenuItemComponent({currentID, myID, myTitle, mySections,
 
     const createSection = (section: NavbarSection) => {
         return (
-            <div key={section.id} className={`${styles.section}`.concat(sidemode ? ` ${styles.section_side}` : '')}>
-                <Link href={section.href}>
+            <Link href={section.href}>
+                 <div key={section.id} className={`${styles.section}`.concat(sidemode ? ` ${styles.section_side}` : '')}>
                     <span>{section.title}</span>
-                </Link>
-            </div>
+                 </div>
+            </Link>
+            // <div key={section.id} className={`${styles.section}`.concat(sidemode ? ` ${styles.section_side}` : '')}>
+            //     <Link href={section.href}>
+            //         <span>{section.title}</span>
+            //     </Link>
+            // </div>
 
         );
      }

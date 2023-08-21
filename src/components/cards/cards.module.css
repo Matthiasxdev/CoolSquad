@@ -16,6 +16,12 @@
     overflow: hidden;
 }
 
+.positionning {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
 .image {
     object-fit: cover;
     height: 100%;

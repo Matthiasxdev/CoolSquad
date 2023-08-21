@@ -1,5 +1,5 @@
 import { CardExtend } from "@/shared/types";
-import CardComponent from "./Cards";
+import CardComponent from "./cards";
 import styles from './grid.module.css'
 
 interface IProps {
