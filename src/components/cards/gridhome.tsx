@@ -13,6 +13,7 @@ export default function HomeCardsGrid({myCards}:IProps){
         return (
         <HomeCard 
             id={card.id}
+            price={card.price}
             description={card.description}
             image={card.image}
             rating={card.rating}

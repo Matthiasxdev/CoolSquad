@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Head from "next/head";
 import UniteamArrow from '@/components/svg/arrowuniteam';
 import { CardExtend } from "@/shared/types";
-import CardsNewGrid from '@/components/cards/gridcardsNew';
+import CardsGrid from '@/components/cards/grid';
 
 export default function TestPage() {
   return (
@@ -82,7 +82,7 @@ export default function TestPage() {
           <h2>Vous aimerez peut-être</h2>
         </div>
     <div className={style.containerGrid}></div>
-        <CardsNewGrid 
+        <CardsGrid 
                 myCards={cardsIdeas}
                 />
     <div/>
@@ -110,6 +110,7 @@ const cardsIdeas:CardExtend[] = [
     time:'2h',
     localisation: "onsite",
     city: 'Montpellier',
+    favorite:false
   },
   {
     id:'2',
@@ -130,6 +131,7 @@ const cardsIdeas:CardExtend[] = [
     time:'2h',
     localisation: "onsite",
     city: 'Montpellier',
+    favorite:false
   },
   {
     id:'3',
@@ -150,6 +152,7 @@ const cardsIdeas:CardExtend[] = [
     time:'2h',
     localisation: "onsite",
     city: 'Montpellier',
+    favorite:false
   },
   {
     id:'4',
@@ -170,6 +173,7 @@ const cardsIdeas:CardExtend[] = [
     time:'2h',
     localisation: "onsite",
     city: 'Montpellier',
+    favorite:false
   },
 
   {
@@ -191,6 +195,7 @@ const cardsIdeas:CardExtend[] = [
     time:'2h',
     localisation: "onsite",
     city: 'Montpellier',
+    favorite:false
   }
 
 ]

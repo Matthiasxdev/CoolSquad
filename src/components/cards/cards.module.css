@@ -1,72 +1,38 @@
 .container{
-    height:320px;
-    width:225px;
+    height:180px;
+    width:230px;
     display: block;
-    margin:0 auto;
     padding: 0;
+    position: relative;
+    
+    
 }   
 
-/*========= IMAGE ================*/
-
-.frame {
-    position: relative;
-    width: 100%;
-    height: 257px;
+.frame{
+    width:100%;
+    height:180px;
+    object-fit:cover;
     border-radius: 39px;
     overflow: hidden;
-  }
-  
-  .positionning {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .image {
+}
+
+.image {
     object-fit: cover;
-    width: 100%;
     height: 100%;
-    transition: transform 0.2s;
-  }
-  
-    .image:hover{
-        -ms-transform: scale(1.15) ; 
-        -webkit-transform: scale(1.15) ; 
-        transform: scale(1.15) ;
-    }
-
-  .button_like {
-    position: absolute;
-    bottom: 12px;
-    right: 14px;
-    background: none;
-    border: none;
-    height: 35px;
-    width: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-
-  .like svg{
-    --easing: cubic-bezier(.7,0,.3,1);
-    --duration: 0.5s;
-    fill: transparent;
-    stroke: white;
-    stroke-width: 2;
-    -webkit-transition: fill var(--duration) var(--easing), stroke var(--duration) var(--easing);
-    transition: fill var(--duration) var(--easing),  stroke var(--duration) var(--easing);
-  }
-  .red svg{
-    fill: red;
-    stroke: red;
-
-  }
-
-/*=============================*/
+    transition: transform .2s;
+}
+.image:hover{
+    -ms-transform: scale(1.15) ; /* IE 9 */
+    -webkit-transform: scale(1.15) ; /* Safari 3-8 */
+    transform: scale(1.15) ;
+}
 
 .text{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.infos{
     display: grid;
     grid-template-columns: 70% 30%;
 }
@@ -78,6 +44,9 @@
     font-weight: 500;
     font-size: 19px;
     color: var(--main-black);
+    white-space: nowrap;
+    overflow-x: none;
+    
 }
 
 .rating{
@@ -102,9 +71,34 @@
 }
 
 .price{
-    grid-column: 1 / 3;
-    padding-left: 10px;
+    text-align: left;
+    font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--main-black);
+    white-space: nowrap;
+    overflow-x: none;
 }
+.time{
+    width:100%;
+    height: 100%;
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(156, 154, 154);
+}
+
+.city{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: right;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(156, 154, 154);
+}
+

@@ -14,6 +14,7 @@ import ConstructionIcon from '@/components/svg/construction'
 const cardsIdeas:CardPresentation[] = [
   {
     id:'1',
+    price:25,
     image:{
       path:'/images/casino.jpg',
       alt:'Animation casino'
@@ -29,6 +30,7 @@ const cardsIdeas:CardPresentation[] = [
   },
   {
     id:'2',
+    price:25,
     image:{
       path:'/images/casino.jpg',
       alt:'Laser Game VR'
@@ -44,6 +46,7 @@ const cardsIdeas:CardPresentation[] = [
   },
   {
     id:'3',
+    price:25,
     image:{
       path:'/images/casino.jpg',
       alt:'Atelier peinture'
@@ -59,6 +62,7 @@ const cardsIdeas:CardPresentation[] = [
   },
   {
     id:'4',
+    price:25,
     image:{
       path:'/images/casino.jpg',
       alt:'Activités Icebreaker'

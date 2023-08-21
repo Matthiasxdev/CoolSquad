@@ -1,5 +1,5 @@
 import { CardExtend } from "@/shared/types";
-import CardComponent from "./cards";
+import CardComponent from "./Cards";
 import styles from './grid.module.css'
 
 interface IProps {
@@ -25,6 +25,7 @@ interface IProps {
             localisation={card.localisation}
             city={card.city}
             link={""} 
+            time={card.time}
             favorite={false}
             // onClickFavorite={() => toggleFavorite(card.id)}        
             /> 

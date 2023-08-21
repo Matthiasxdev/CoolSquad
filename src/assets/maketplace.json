@@ -14,6 +14,7 @@
     "price":"25",
     "unit":"par personne",
     "localisation":"onsite",
+    "time":"1h30",
     "city":"Avignon"
    },
    {
@@ -31,7 +32,8 @@
     "price":"20",
     "unit":"par personne",
     "localisation":"onsite",
-    "city":"Avingon"
+    "time":"1h30",
+    "city":"Avignon"
    },
    {
     "id":"cliabh1a00003ugy85oi1ak1a",
@@ -48,6 +50,7 @@
     "price":"25",
     "unit":"par personne",
     "localisation":"onsite",
+    "time":"1h30",
     "city":"Avignon"
    }
 
