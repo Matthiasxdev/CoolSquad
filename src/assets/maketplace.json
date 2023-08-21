@@ -2,53 +2,53 @@
     {
     "id":"cli373dy30001uga84yzcnkcj",
     "image":{
-      "path":"/marketplace/market1.jpg",
+      "path":"/marketplace/market6.jpg",
       "alt":"image alt"
     },
-    "description":"Dessin à 5 mains",
+    "description":"Atelier plantes",
     "rating": {
                 "score": "4.5",
-                "comments": "11",
-                "link":""
-              },
-    "price":"50",
-    "unit":"par personne",
-    "localisation":"onsite",
-    "city":"Montpellier"
-   },
-   {
-    "id":"cli379pql0003uga83rwsiemt",
-    "image":{
-      "path":"/marketplace/market2.jpg",
-      "alt":"image alt"
-    },
-    "description":"Animation Casino",
-    "rating": {
-                "score": "4.5",
-                "comments": "11",
-                "link":""
-              },
-    "price":"50",
-    "unit":"par personne",
-    "localisation":"virtual",
-    "city":"Montpellier"
-   },
-   {
-    "id":"cliabh1a00003ugy85oi1ak1a",
-    "image":{
-      "path":"/marketplace/market3.jpg",
-      "alt":"image alt"
-    },
-    "description":"Roulette Russe",
-    "rating": {
-                "score": "4.5",
-                "comments": "11",
+                "comments": "62",
                 "link":""
               },
     "price":"25",
     "unit":"par personne",
-    "localisation":"virtual",
-    "city":"Marseille"
+    "localisation":"onsite",
+    "city":"Avignon"
+   },
+   {
+    "id":"cli379pql0003uga83rwsiemt",
+    "image":{
+      "path":"/marketplace/market4.jpg",
+      "alt":"image alt"
+    },
+    "description":"Animation Casino",
+    "rating": {
+                "score": "4.7",
+                "comments": "11",
+                "link":""
+              },
+    "price":"20",
+    "unit":"par personne",
+    "localisation":"onsite",
+    "city":"Avingon"
+   },
+   {
+    "id":"cliabh1a00003ugy85oi1ak1a",
+    "image":{
+      "path":"/marketplace/market5.jpg",
+      "alt":"image alt"
+    },
+    "description":"Meeting",
+    "rating": {
+                "score": "3.4",
+                "comments": "26",
+                "link":""
+              },
+    "price":"25",
+    "unit":"par personne",
+    "localisation":"onsite",
+    "city":"Avignon"
    }
 
  ]

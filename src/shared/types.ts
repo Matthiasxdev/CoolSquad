@@ -25,6 +25,7 @@ export interface CardExtend extends Card{
 
 
 export interface CardPresentation extends Card {
+  price: number;
   rating:{
   score: number;
   comments: number;

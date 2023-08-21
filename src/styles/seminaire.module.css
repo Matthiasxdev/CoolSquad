@@ -1,0 +1,163 @@
+.title {
+  display: flex;
+  margin-top: 200px;
+  margin-left: -850px;
+  color: black;
+  position: relative;
+  justify-content: center;
+  font-size: 30px;
+}
+.title2 {
+  margin-top: 50px;
+  display: flex;
+  margin-left: -650px;
+  color: black;
+  position: relative;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+  
+  .inputContainer {
+    flex: 1;
+    margin-right: 10px;
+    width: 100%;
+}
+  
+  .inputContainer:last-child {
+    margin-right: 0;
+}
+  
+.inputContainer label {
+    display: block;
+    
+}
+
+  
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 350px;
+  width: 100%;
+
+}
+
+.imageContainer img {
+  width: 529px;
+  height: 100%;
+  border-radius: 45px;
+}
+
+.textContainer {
+  margin-bottom: 10px;
+}
+
+  
+.leftContainer {
+    padding: 0px;
+    background-color: #f0ecec;
+    border-radius: 45px;
+    margin-right: 40px;
+    position: relative;
+}
+    
+.textContainer {
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 529px;
+    height: 100%;
+    border-radius: 45px;
+    object-fit: cover;
+}
+
+.arrow svg{
+  position: absolute;
+  top: 28px; right: 31px;
+  width: 31px;
+  height: 31px;
+  fill:var(--main-white);
+}
+
+.imageText {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #ffffff;
+    width:400px ;
+  }
+  
+.imageText h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 10px;
+}
+  
+.imageText p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.formContainer {
+    display: inline-flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 39px;
+    background: var(--blanc, #FFF);
+    /* ombre bloc */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 705px;
+
+}
+
+.button{
+    font-weight: 500;
+    font-size: 17px;
+    color:var(--main-white);
+    background-color: var(--main-blue);
+    border: none;
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 317px;
+    position: relative;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.containerGrid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1274px;
+  margin-top: 50px;
+  
+}

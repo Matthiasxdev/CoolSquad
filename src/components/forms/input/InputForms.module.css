@@ -1,0 +1,27 @@
+
+.box{
+    border-radius: 52px;
+    font-size: 16px;
+    border: solid 1px var(--main-black);
+    background-color: var(--main-white);
+    height: 52px;
+    width: 100%;
+    padding-left: 15px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.specialbox{
+    border-radius: 25px;
+    font-size: 15px;
+    border: solid 1px var(--main-black);
+    background-color: var(--main-white);
+    height: 150px;
+    width: 100%;
+    padding-left: 15px; 
+    padding-top: 10px;
+    text-align: left; 
+    overflow-y: auto;
+    resize: none;     
+}
+
