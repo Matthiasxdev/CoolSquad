@@ -2,12 +2,9 @@ import { CardExtend } from "@/shared/types";
 import Image from "next/image";
 import styles from "./cards.module.css"
 import Link from "next/link";
-<<<<<<< HEAD
-=======
 import HeartIcon from "../svg/heart";
 import { useState } from "react";
 import { LikeButton } from "./LikeButton";
->>>>>>> fix/filters_responsive
 
 const euroSymbol: string = '€';
 const space: string = ' ';

@@ -24,15 +24,9 @@ interface IProps {
             unit={card.unit}
             localisation={card.localisation}
             city={card.city}
-<<<<<<< HEAD
-            key={card.id} link={""}  
-            time={card.time}
-            details={card.details}       
-=======
             link={""} 
             favorite={false}
             // onClickFavorite={() => toggleFavorite(card.id)}        
->>>>>>> fix/filters_responsive
             /> 
           </div>
           );
