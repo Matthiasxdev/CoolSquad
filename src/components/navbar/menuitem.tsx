@@ -31,8 +31,8 @@ export default function MenuItemComponent({currentID, myID, myTitle, mySections,
 
     const createSection = (section: NavbarSection) => {
         return (
-            <Link href={section.href}>
-                 <div key={section.id} className={`${styles.section}`.concat(sidemode ? ` ${styles.section_side}` : '')}>
+            <Link key={section.id} href={section.href}>
+                 <div className={`${styles.section}`.concat(sidemode ? ` ${styles.section_side}` : '')}>
                     <span>{section.title}</span>
                  </div>
             </Link>
