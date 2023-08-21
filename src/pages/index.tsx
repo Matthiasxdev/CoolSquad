@@ -9,6 +9,7 @@ import EmblaCarousel from '@/components/caroussel/EmblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import UniteamArrow from '@/components/svg/arrowuniteam'
 import HomeCardsGrid from '@/components/cards/gridhome'
+import ConstructionIcon from '@/components/svg/construction'
 
 const cardsIdeas:CardPresentation[] = [
   {
@@ -129,7 +130,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Uniteam</title>
+        <title>CoolSquad</title>
         <meta name="description" content="La plateforme pour assurer le bien-être et la cohésion de vos collaborateurs" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
@@ -137,6 +138,7 @@ export default function Home() {
       <NavbarComponent />
       <main className={styles.main}>
         <section className={styles.firstpanel}>
+          <div className={styles.disclaimer}><ConstructionIcon /><h2>Site en construction</h2><ConstructionIcon /></div>
           <div className={styles.description}>
             <h1>La plateforme pour <em>assurer le bien-être et la cohésion</em> de vos collaborateurs</h1>
             <p>Découvrez notre catalogue de prestations de team building, d'animations et de séminaires</p>

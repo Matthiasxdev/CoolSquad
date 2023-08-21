@@ -27,7 +27,11 @@ export const LoginButton = ({mode} : ButtonProps) => {
 };
 
 export const LogoutButton = () => {
-  return <button onClick={() => signOut()}>Se déconnecter</button>;
+  return <button 
+  onClick={() => signOut({ callbackUrl: '/' })}
+  className={styles.disconnect_f}>
+      Se déconnecter
+  </button>
 };
 
 export const UserComponent = () => {

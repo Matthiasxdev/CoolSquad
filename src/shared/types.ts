@@ -1,3 +1,4 @@
+import { string } from "zod";
 
 export interface Card {
     id:string; // number
@@ -19,8 +20,7 @@ export interface CardExtend extends Card{
   unit:string;
   localisation: "onsite" | "virtual";
   city:string;
-  time:string;
-  details:string;
+  favorite: boolean;
 }
 
 

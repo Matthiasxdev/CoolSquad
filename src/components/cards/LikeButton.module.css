@@ -1,0 +1,29 @@
+.button_like {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid red; */
+  }
+  
+
+  .like svg{
+    --easing: cubic-bezier(.7,0,.3,1);
+    --duration: 0.5s;
+    fill: transparent;
+    stroke: white;
+    stroke-width: 2;
+    -webkit-transition: fill var(--duration) var(--easing), stroke var(--duration) var(--easing);
+    transition: fill var(--duration) var(--easing),  stroke var(--duration) var(--easing);
+  }
+  .red svg{
+    fill: red;
+    stroke: red;
+
+  }

@@ -3,7 +3,6 @@ import data from '../../assets/navbar.json';
 import { useState , useEffect, useRef} from 'react';
 import { NavbarMenu } from '@/shared/types';
 import styles from './navbar.module.css'
-import UniteamLogo from '../svg/uniteamlogo';
 import UniteamIcon from '../svg/uniteamicon';
 import Link from 'next/link';
 import Burger from '../svg/burger';
@@ -11,6 +10,7 @@ import useMediaQuery from '@/api/mediaQuery'
 import { CSSTransition } from 'react-transition-group';
 import { useSession } from 'next-auth/react';
 import { LoginButton, UserComponent } from '../auth/AuthButtons';
+import CooolSquadSVG from '../svg/coolsquad';
 
 const datajson: NavbarMenu[] = JSON.parse(JSON.stringify(data));
 
@@ -55,9 +55,9 @@ export default function NavbarComponent(){
     return (
         <div className={`${styles.navbar}`.concat(menuOpen ? ` ${styles.menu_open}` : '')}>
             <Link href="/">
-                <div className={styles.uniteam}>
+                <div className={styles.coolsquad}>
                     <UniteamIcon className={styles.icon} />
-                    <UniteamLogo className={styles.logo} />
+                    <CooolSquadSVG className={styles.logo} />
                 </div>
             </Link>
                 {isBreakpoint1100?

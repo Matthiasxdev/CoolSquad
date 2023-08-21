@@ -17,6 +17,13 @@
   padding-bottom: 10vh;
 } 
 
+.disclaimer{
+  position: absolute;
+  top: calc(var(--navbar-height) + 50px);
+  display: flex;
+  gap : 25px ;
+}
+
 .firstpanel{
   display: flex;
   gap:40px;

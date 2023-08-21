@@ -39,6 +39,11 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   }
 }
 
+
+// type ProductsPageProps =  {
+//   activities: [Activity]
+// }
+
 export default function ProductsPage ( {activities}: any  ) {
     // As this page uses Server Side Rendering, the `session` will be already
     // populated on render without needing to go through a loading stage.
