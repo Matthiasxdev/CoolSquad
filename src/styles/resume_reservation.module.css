@@ -1,6 +1,17 @@
+.returnButton{
+  border: none;
+  background-color: var(--main-white);
+  color: var(--main-blue);
+  display: flex;
+  margin-top: 200px;
+  margin-left: 323px;
+  cursor: pointer;
+
+}
+
 .title {
     display: flex;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 323px;
     color: black;
     justify-content: left;

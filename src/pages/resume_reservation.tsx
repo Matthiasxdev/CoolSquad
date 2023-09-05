@@ -4,9 +4,7 @@ import styles from '@/styles/resume_reservation.module.css';
 import Image from 'next/image';
 import Head from "next/head";
 import VerifiedUserIcon from '@/components/svg/verifieduser';
-import BankCard from '@/components/svg/bankcard';
-import CardBuying from '@/components/buy/CardBuying';
-import PaypalBuying from '@/components/buy/PaypalBuying';
+import BuyMethode from '@/components/buy/BuyMethode';
 
 const euroSymbol: string = '€';
 const attendees: string = '*12*';
@@ -27,11 +25,11 @@ export default function ReservationPage() {
             </Head>
             
 
-            /* Mettre un bouton retour ici */
+            <button className={styles.returnButton}>◁ Retour</button>
 
             <div className={styles.title}>
                 <h1>Votre réservation</h1>
-                </div>
+            </div>
 
 
             <div className={styles.container}>
@@ -82,8 +80,7 @@ export default function ReservationPage() {
                     <h2>Paiement</h2>
                     <p>Vous serez prélevez une fois que le prestataire valide la réservation </p>
                     <div className={styles.buyingMethod}>
-                        <CardBuying/>
-                        <PaypalBuying/>
+                        <BuyMethode/>
                     </div>
                     <div className={styles.cardInfos}>
                         <InputForms title="Numéro de carte" type='text' placeholder='0000 0000 0000 0000'/>
@@ -92,10 +89,9 @@ export default function ReservationPage() {
                     </div>
                     <InputForms title='Pays' type='text' placeholder='France'/>
                     <div className={styles.disclaimerPrivacy}>Nos conditions d'utilisation s'appliquent. Pour plus d'informations, consultez nos <a className={styles.link} href='Link Politiques confidentialité'>Politiques de confidentialité</a></div>
-
-
-                    
+ 
                 </div>
+                
                 <div className={styles.containerRight}>
                         <h2>Résumé</h2>
                         <div className={styles.attendees_price}>
